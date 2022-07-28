@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合并单元格</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" width="500" height="249">
+        <tr> 
+            <td></td>
+            <td colspan="2"></td>
+
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<!-- 
+合并单元格方式：
+跨行合并：rowspan="合并单元格的个数"
+跨列合并：colspan="合并单元格的个数"
+目标单元格：(写合并代码)
+跨行：最上侧单元格为目标单元格, 写合并代码
+跨列：最左侧单元格为目标单元格, 写合并代码
+合并单元格三步曲：
+1. 先确定是跨行还是跨列合并。
+2. 找到目标单元格. 写上合并方式 = 合并的单元格数量。比如：<td colspan=“2”></td>。
+3. 删除多余的单元格。 -->
